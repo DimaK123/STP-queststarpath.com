@@ -1,0 +1,55 @@
+.why-us {
+  @include sectionPaddingBlock;
+
+  &__image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+
+    @include onMobile {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__content {
+    grid-row: 1 / -1;
+  }
+
+  &__section-title {
+    margin-bottom: 60px;
+
+    @include onMobile {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__advantages {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    @include onMobile {
+      gap: 24px;
+    }
+  }
+
+  &__advantage {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+
+  &__icon {
+    @include figure(60px);
+
+    @include onMobile {
+      @include figure(48px);
+    }
+  }
+
+  &__advantage-title {
+    margin-bottom: 8px;
+  }
+
+
+}

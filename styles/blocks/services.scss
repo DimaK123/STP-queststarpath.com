@@ -1,0 +1,62 @@
+.services {
+  @include sectionPaddingBlock;
+  padding-top: 120px;
+
+  @include onMobile {
+    padding-top: 60px;
+  }
+
+  &__gradient {
+    position: absolute;
+    top: -25%;
+    z-index: -1;
+
+    width: 100%;
+
+    @include onMobile {
+      top: -5%;
+    }
+  }
+
+  &__section-title {
+    text-align: center;
+
+    @include sectionTopTextMargin;
+  }
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+
+    @include onMobile {
+      gap: 20px;
+    }
+  }
+
+  &__card {
+    text-align: center;
+
+    padding: 45px 32px;
+
+    @include cardBackground;
+
+    flex: 392px;
+
+    @include onMobile {
+      padding: 24px;
+    }
+  }
+
+  &__icon {
+    margin-bottom: 32px;
+
+    @include onMobile {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__card-title {
+    margin-bottom: 16px;
+  }
+}

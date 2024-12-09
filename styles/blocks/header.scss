@@ -1,0 +1,35 @@
+.header {
+  padding: 18px 40px;
+
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.06);
+
+  @include onMobile {
+    padding: 10px;
+  }
+
+  &--menu {
+    left: $padding-mobile;
+    bottom: $padding-mobile;
+    width: auto;
+    z-index: 1;
+
+    padding: 10px 16px;
+
+    & .nav {
+      display: grid;
+      grid-template-rows: min-content;
+      gap: 32px;
+    }
+
+    & .nav__list {
+      flex-direction: column;
+      color: #fff;
+
+      height: auto;
+      width: auto;
+      transform: scale(1);
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@import 'node_modules/normalize.css/normalize';
+@import './reset';
+
+@import './utils/variables';
+@import './utils/mixins';
+
+@import './blocks/wrapper';
+@import './blocks/grid';
+@import './blocks/menu-backgroung'; 
+@import './blocks/page';
+@import './blocks/nav';
+@import './blocks/header';
+@import './blocks/hero';
+@import './blocks/action-button';
+@import './blocks/menu-button';
+@import './blocks/services';
+@import './blocks/section-title';
+@import './blocks/why-us';
+@import './blocks/projects.scss';

@@ -1,0 +1,32 @@
+@mixin onMobile {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin figure($size) {
+  width: $size;
+  height: $size;
+}
+
+@mixin cardBackground {
+  background-color: rgba(24, 24, 24, 0.6);
+  backdrop-filter: blur(36px);
+  border-radius: 20px;
+}
+
+@mixin sectionPaddingBlock {
+  padding-block: 60px;
+
+  @include onMobile {
+    padding-block: 30px;
+  }
+}
+
+@mixin sectionTopTextMargin {
+  margin-bottom: 80px;
+
+  @include onMobile {
+    margin-bottom: 40px;
+  }
+}

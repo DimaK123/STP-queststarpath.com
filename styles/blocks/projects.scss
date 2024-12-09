@@ -1,0 +1,41 @@
+.projects {
+  &__swiper-block {
+    position: relative;
+  }
+
+  &__swiper-slide {
+    @include cardBackground;
+
+    padding: 24px;
+  }
+
+  &__swiper-button {
+    @include figure(65px);
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &::after {
+      content: none;
+    }
+
+    &-next {
+      right: -90px;
+      background-image: url('../images/icons/button-right-active.svg');
+
+      &.swiper-button-disabled {
+        background-image: url('../images/icons/button-right-disable.svg');
+        opacity: 1;
+      }
+    }
+
+    &-prev {
+      left: -90px;
+      background-image: url('../images/icons/button-left-active.svg');
+
+      &.swiper-button-disabled {
+        background-image: url('../images/icons/button-left-disable.svg');
+        opacity: 1;
+      }
+    }
+  }
+}
