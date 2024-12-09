@@ -1,0 +1,41 @@
+.nav {
+  &__list {
+    display: flex;
+    gap: 32px;
+
+    @include onMobile {
+      height: 0;
+      width: 0;
+      transform: scale(0);
+    }
+  }
+
+  &__link {
+    &:hover {
+      color: $page-light-blue-color;
+    }
+  }
+
+  &__button {
+    display: none;
+    @include figure(40px);
+
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &--burger {
+      background-image: url('../images/icons/burger.svg');
+      
+    }
+
+    &--close {
+      justify-self: end;
+
+      background-image: url('../images/icons/menu-close.svg');
+    }
+
+    @include onMobile {
+      display: block;
+    }
+  }
+}

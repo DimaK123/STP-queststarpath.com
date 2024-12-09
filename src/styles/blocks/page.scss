@@ -1,0 +1,63 @@
+.page {
+  transition: all 0.3s ease;
+
+  &__body {
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.7);
+
+    background-color: $page-dark-blue-color;
+
+    @include onMobile {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    & h1, h2, h3, h4, h5, h6 {
+      font-family: "Inter", sans-serif;
+      color: #fff;
+    }
+
+    & p {
+      letter-spacing: 0.02em;
+
+      @include onMobile {
+        letter-spacing: 0.03em;
+      }
+    }
+
+    &--fixed {
+      overflow-y: hidden;
+    }
+  }
+
+  &__header {
+    position: fixed;
+    top: 40px;
+    left: 50%;
+    z-index: 1;
+    transform: translateX(-50%);
+
+    width: max-content;
+
+    @include onMobile {
+      top: $padding-mobile;
+      right: $padding-mobile;
+      transform: translateX(0);
+      left: auto;
+    }
+  }
+
+  &__section-text {
+    margin-bottom: 80px;
+
+    @include onMobile {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__services {
+    position: relative;
+  }
+}

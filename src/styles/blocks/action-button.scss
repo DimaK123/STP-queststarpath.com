@@ -1,0 +1,27 @@
+.action-button {
+  font-size: 20px;
+  line-height: 32px;
+
+  padding: 18px 32px;
+
+  color: $page-dark-blue-color;
+
+  border-radius: 16px;
+  background-color: #fff;
+
+  &--secondary {
+    background-color: transparent;
+    color: #fff;
+    outline: 2px solid #fff;
+
+    &:hover {
+      background-color: #fff;
+      color: $page-dark-blue-color;
+  
+      @include onMobile {
+        background-color: transparent;
+        color: #fff;
+      }
+    }
+  }
+}
