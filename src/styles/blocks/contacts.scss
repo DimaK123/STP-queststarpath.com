@@ -1,0 +1,127 @@
+.contacts {
+  @include sectionPaddingBlock;
+  padding-bottom: 120px;
+
+  background-image: url('../images/contacts__gradient.avif');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @include onMobile {
+    padding-bottom: 115px;
+
+    background-image: url('../images/contacts__gradient-mob.avif');
+    background-position-y: 580px;
+    background-position-x: center;
+  }
+
+  &__inner {
+    @include onMobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 32px;
+  }
+
+  &__section-title {
+    @extend .projects__section-title;
+
+    @include onMobile {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__icon {
+    @include figure(36px);
+    object-fit: contain;
+  }
+
+  &__link {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: #fff;
+  
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  
+    &::before {
+      content: '';
+      display: block;
+      @include figure(36px);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  
+    &--phone::before {
+      background-image: url('../images/icons/phone.svg');
+    }
+  
+    &--mail::before {
+      background-image: url('../images/icons/mail.svg');
+    }
+  
+    &--location::before {
+      background-image: url('../images/icons/location.svg');
+    }
+
+    @include onMobile {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    width: 100%;
+  }
+
+  &__input {
+    padding: 16px 8px;
+
+    color: inherit;
+
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+  }
+
+  &__text-area {
+    @extend .contacts__input;
+
+    margin-bottom: 32px;
+
+    min-height: 240px;
+
+    @include onMobile {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__action-button {
+    min-width: 288px;
+
+    align-self: end;
+    line-height: 30px;
+    color: #150B20;
+
+    @include onMobile {
+      align-self: center;
+    }
+  }
+}

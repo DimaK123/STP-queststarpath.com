@@ -1,18 +1,18 @@
 const projectsSwiper = new Swiper(".projects__swiper", {
   slidesPerView: "auto",
-  spaceBetween: 16,
+  spaceBetween: 20,
   direction: 'vertical',
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  touchReleaseOnEdges: true,
 
   breakpoints: {
-    1440: {
+    769: {
       slidesPerView: 3,
       spaceBetween: 24,
       direction: 'horizontal',
-      loop: true
     }
   }
 });

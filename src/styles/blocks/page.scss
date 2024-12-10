@@ -1,6 +1,8 @@
 .page {
   transition: all 0.3s ease;
 
+  scroll-behavior: smooth;
+
   &__body {
     font-family: "Manrope", sans-serif;
     font-size: 16px;
@@ -36,7 +38,7 @@
     position: fixed;
     top: 40px;
     left: 50%;
-    z-index: 1;
+    z-index: 2;
     transform: translateX(-50%);
 
     width: max-content;
@@ -58,6 +60,18 @@
   }
 
   &__services {
+    position: relative;
+  }
+
+  &__why-us {
+    margin-bottom: 10px;
+
+    @include onMobile {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__projects {
     position: relative;
   }
 }

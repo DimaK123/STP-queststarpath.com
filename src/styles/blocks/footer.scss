@@ -1,0 +1,62 @@
+.footer {
+  @include sectionPaddingBlock;
+  background-color: #000;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 34px;
+
+    color: #fff;
+
+    width: 100%;
+    margin-bottom: 60px;
+
+    @include onMobile {
+      flex-direction: column;
+      align-items: center;
+  
+      gap: 24px;
+  
+      margin-bottom: 40px;
+    }
+  }
+
+  &__nav-item {
+    display: inline-flex;
+  }
+
+  &__link {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    
+    &:hover {
+      color: $page-light-blue-color !important;
+    }
+
+    @include onMobile {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 20px;
+    }
+  }
+
+  &__copyright {
+    text-align: center;
+
+    @include onMobile {
+      font-size: 13px;
+      line-height: 24px;
+      letter-spacing: 0;
+    }
+  }
+}
