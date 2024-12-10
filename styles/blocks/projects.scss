@@ -1,12 +1,84 @@
 .projects {
+  @include sectionPaddingBlock;
+
+  &__gradient {
+    position: absolute;
+    top: -20%;
+    z-index: -1;
+
+    width: 100%;
+
+    @include onMobile{
+      top: -7%;
+    }
+  }
+
+  &__text {
+    @include sectionTopTextMargin;
+
+    text-align: center;
+
+    & p {
+      font-size: 18px;
+      line-height: 28px;
+      letter-spacing: 0.03em;
+    }
+  }
+
+  &__section-title {
+    margin-bottom: 24px;
+  }
+
   &__swiper-block {
     position: relative;
+
+    margin-bottom: 56px;
+
+    @include onMobile {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__swiper {
+    @include onMobile {
+      z-index: 0;
+    }
+  }
+
+  &__swiper-wrapper {
+    @include onMobile {
+      align-items: center;
+    }
   }
 
   &__swiper-slide {
     @include cardBackground;
 
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    width: min-content;
+    min-height: 555px;
+
     padding: 24px;
+
+    @include onMobile {
+      min-height: 530px;
+    }
+  }
+
+  &__img {
+    border-radius: 26px;
+    width: 100%;
+
+    min-width: 295px;
+  }
+
+  &__card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px
   }
 
   &__swiper-button {
@@ -36,6 +108,19 @@
         background-image: url('../images/icons/button-left-disable.svg');
         opacity: 1;
       }
+    }
+  }
+
+  &__action-button {
+    display: block;
+    width: max-content;
+    padding-inline: 34px;
+    margin: 0 auto;
+
+    color: #150B20;
+
+    @include onMobile {
+      width: 100%;
     }
   }
 }

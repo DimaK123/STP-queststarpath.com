@@ -13,50 +13,50 @@
   <link rel="stylesheet" href="./styles/main.min.css">
   <title>queststarpath.com</title>
 </head>
-<body class="page__body">
+<body class="page__body" id="home">
   <header class="header page__header">
     <nav class="nav">
       <button class="nav__button nav__button--burger"></button>
 
       <ul class="nav__list">
         <li class="nav__item">
-          <a href="" class="nav__link">
+          <a href="#home" class="nav__link">
           Strona główna
           </a>
         </li>
 
         <li class="nav__item">
-          <a href="" class="nav__link">
+          <a href="#services" class="nav__link">
             Nasze Usługi
           </a>
         </li>
 
         <li class="nav__item">
-          <a href="" class="nav__link">
+          <a href="#why-us" class="nav__link">
             Dlaczego Quest Star Path?
           </a>
         </li>
 
         <li class="nav__item">
-          <a href="" class="nav__link">
+          <a href="#projects" class="nav__link">
             Nasze projekty
           </a>
         </li>
 
         <li class="nav__item">
-          <a href="" class="nav__link">
+          <a href="#reviews" class="nav__link">
             Opinie Klientów
           </a>
         </li>
 
         <li class="nav__item">
-          <a href="" class="nav__link">
+          <a href="#faq" class="nav__link">
             FAQ
           </a>
         </li>
 
         <li class="nav__item">
-          <a href="" class="nav__link">
+          <a href="#contacts" class="nav__link">
             Kontakt
           </a>
         </li>
@@ -100,7 +100,7 @@
       </div>
     </section>
 
-    <section class="page__services services">
+    <section class="page__services services" id="services">
       <picture>
         <source
           media="(max-width: 768px)"
@@ -194,7 +194,7 @@
       </div>
     </section>
 
-    <section class="why-us">
+    <section class="page__why-us why-us" id="why-us">
       <div class="wrapper">
         <div class="why-us__inner grid">
           <img
@@ -274,13 +274,25 @@
       </div>
     </section>
 
-    <section class="projects">
+    <section class="page__projects projects" id="projects">
+      <picture>
+        <source
+          media="(max-width: 768px)"
+          srcset='./images/projects-gradient-mob.avif'
+        >
+          <img
+            src="./images/projects-gradient.avif"
+            alt="projects-gradient"
+            class="projects__gradient"
+          >
+      </picture>
+
       <div class="wrapper">
         <div class="projects__inner">
           <div class="projects__text">
-            <h2 class="project__section-title section-title">
+            <h2 class="projects__section-title section-title">
               Nasze projekty
-            </h2>
+            </h2> 
             <p>
               Zobacz, jak nasze projekty pomogły klientom osiągnąć sukces.
             </p>
@@ -288,7 +300,7 @@
 
           <div class="projects__swiper-block">
             <div class="projects__swiper swiper">
-              <div class="swiper-wrapper">
+              <div class="projects__swiper-wrapper swiper-wrapper">
                 <div class="projects__swiper-slide swiper-slide">
                   <img
                     src="./images/project-image-1.jpg"
@@ -298,11 +310,17 @@
                   <h3 class="projects__card-title">
                     Od lokalnego do globalnego: Fashion Studio
                   </h3>
-                  <div class="project__text">
-                    <p></p>
-                    <p></p>
+                  <div class="projects__card-text">
+                    <p>
+                      Pomogliśmy lokalnej marce odzieżowej wejść na rynki międzynarodowe, tworząc strategię social media i optymalizując SEO.
+                    </p>
+
+                    <p>
+                      <span style="color: #fff;">Rezultat:</span> Wzrost sprzedaży o 80% w ciągu 6 miesięcy, ponad 10 tysięcy nowych obserwujących w mediach społecznościowych.
+                    </p>
                   </div>
                 </div>
+
                 <div class="projects__swiper-slide swiper-slide">
                   <img
                     src="./images/project-image-2.jpg"
@@ -312,11 +330,16 @@
                   <h3 class="projects__card-title">
                     Wprowadzenie nowego produktu: Green Energy Drinks
                   </h3>
-                  <div class="project__text">
-                    <p></p>
-                    <p></p>
+                  <div class="projects__card-text">
+                    <p>
+                      Stworzyliśmy kampanię reklamową dla nowego napoju energetycznego, angażując influencerów i tworząc treści wideo.
+                    </p>
+                    <p>
+                      <span style="color: #fff;">Rezultat:</span> 15 tysięcy sprzedanych produktów w pierwszym miesiącu, wzrost rozpoznawalności marki o 40%.
+                    </p>
                   </div>
                 </div>
+
                 <div class="projects__swiper-slide swiper-slide">
                   <img
                     src="./images/project-image-3.jpg"
@@ -326,11 +349,16 @@
                   <h3 class="projects__card-title">
                     Odbudowa reputacji online: Hotel Lux
                   </h3>
-                  <div class="project__text">
-                    <p></p>
-                    <p></p>
+                  <div class="projects__card-text">
+                    <p>
+                      Pomogliśmy hotelowi poprawić reputację online po fali negatywnych recenzji. Opracowaliśmy strategię PR, moderowaliśmy opinie i stworzyliśmy filmy z udziałem zadowolonych klientów.
+                    </p>
+                    <p>
+                      <span style="color: #fff;">Rezultat:</span> Wzrost pozytywnych opinii o 65%, odbudowanie zaufania klientów.
+                    </p>
                   </div>
                 </div>
+
                 <div class="projects__swiper-slide swiper-slide">
                   <img
                     src="./images/project-image-4.jpg"
@@ -340,11 +368,16 @@
                   <h3 class="projects__card-title">
                     Cyfrowa modernizacja: Beauty & Care
                   </h3>
-                  <div class="project__text">
-                    <p></p>
-                    <p></p>
+                  <div class="projects__card-text">
+                    <p>
+                      Przeprowadziliśmy redesign strony internetowej firmy kosmetycznej oraz wdrożyliśmy system lojalnościowy dla klientów. Dodaliśmy funkcjonalność konsultacji online i integrację z mediami społecznościowymi..
+                    </p>
+                    <p>
+                      <span style="color: #fff;">Rezultat:</span> Wzrost czasu spędzanego na stronie o 50%, zwiększenie zamówień o 30%.
+                    </p>
                   </div>
                 </div>
+
                 <div class="projects__swiper-slide swiper-slide">
                   <img
                     src="./images/project-image-5.jpg"
@@ -354,9 +387,13 @@
                   <h3 class="projects__card-title">
                     Generowanie leadów: firma IT CodeFlow
                   </h3>
-                  <div class="project__text">
-                    <p></p>
-                    <p></p>
+                  <div class="projects__card-text">
+                    <p>
+                      Skonfigurowaliśmy kampanie reklamowe na LinkedIn w celu przyciągnięcia klientów korporacyjnych. Stworzyliśmy serię artykułów i case studies pokazujących sukcesy firmy.
+                    </p>
+                    <p>
+                      <span style="color: #fff;">Rezultat:</span> Ponad 150 leadów w ciągu 3 miesięcy, 12 podpisanych kontraktów.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -374,10 +411,245 @@
                      swiper-button-prev"
             ></div>
           </div>
+
+          <a
+            href=""
+            class="projects__action-button action-button"
+          >
+            Zobacz pełne portfolio
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+      <div class="wrapper">
+        <div class="reviews__inner">
+          <div class="reviews__text">
+            <h2 class="reviews__section-title section-title">
+              Opinie Klientów
+            </h2>
+
+            <p>
+              Zadowolenie naszych klientów to najlepsza rekomendacja.
+            </p>
+          </div>
+
+          <ul class="reviews__cards">
+            <li class="reviews__card">
+              <div class="reviews__user-info">
+                <img
+                  src="./images/user-1.avif"
+                  alt="Anna Wiśniewska"
+                  class="reviews__user-img"
+                >
+                <div class="reviews__user-text">
+                  <h3 class="reviews__user-name">
+                    Anna Wiśniewska
+                  </h3>
+                  <p>
+                    Właścicielka sieci kawiarni.
+                  </p>
+                </div>
+              </div>
+  
+              <p class="reviews__review">
+                Quest Star Path pomogło nam stworzyć spójną strategię, która przyciągnęła nowych klientów.
+              </p>
+            </li>
+
+            <li class="reviews__card">
+              <div class="reviews__user-info">
+                <img
+                  src="./images/user-2.avif"
+                  alt="Tomasz Nowak"
+                  class="reviews__user-img"
+                >
+                <div class="reviews__user-text">
+                  <h3 class="reviews__user-name">
+                    Tomasz Nowak
+                  </h3>
+                  <p>
+                    Manager w IT
+                  </p>
+                </div>
+              </div>
+
+              <p class="reviews__review">
+                Ich podejście do projektu było pełne kreatywności i dokładności. Wyniki mówią same za siebie.
+              </p>
+            </li>
+
+            <li class="reviews__card">
+              <div class="reviews__user-info">
+                <img
+                  src="./images/user-3.avif"
+                  alt="Marta Kowalska"
+                  class="reviews__user-img"
+                >
+                <div class="reviews__user-text">
+                  <h3 class="reviews__user-name">
+                    Marta Kowalska
+                  </h3>
+                  <p>
+                    Właścicielka sklepu
+                  </p>
+                </div>
+              </div>
+
+              <p class="reviews__review">
+                Zespół Quest Star Path wykazał się profesjonalizmem i pełnym zaangażowaniem w nasz projekt.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq" id="faq">
+      <div class="wrapper">
+        <div class="faq__inner grid">
+          <h2 class="faq__section-title section-title
+                     grid__item grid__item--onDesktop_1-12">
+            FAQ
+          </h2>
+
+          <ul class="faq__questions-list 
+                     grid__item grid__item--onDesktop_2-11">
+            <li class="faq__question-item">
+              <h3 class="faq__question faq__question--wide">
+                Co obejmuje kompleksowa strategia marketingowa?
+              </h3>
+              <p class="faq__answer">
+                Obejmuje analizę rynku, tworzenie treści, kampanie reklamowe oraz optymalizację SEO.
+              </p>
+            </li>
+
+
+            <li class="faq__question-item">
+              <h3 class="faq__question">
+                Jakie wyniki mogę oczekiwać po współpracy z agencją?
+              </h3>
+              <p class="faq__answer">
+                Wyniki zależą od charakterystyki kampanii, jednak nasze podejście gwarantuje wzrost zaangażowania i konwersji.
+              </p>
+            </li>
+
+            <li class="faq__question-item">
+              <h3 class="faq__question">
+                Czy Quest Star Path oferuje usługi międzynarodowe?
+              </h3>
+              <p class="faq__answer">
+                Tak, mamy doświadczenie w pracy z markami z różnych regionów.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts" id="contacts">
+      <div class="wrapper">
+        <div class="contacts__inner grid">
+          <div class="contacts__top grid__item grid__item--onDesktop_1-4">
+            <div class="contacts__text">
+              <h2 class="contacts__section-title section-title">
+                Kontakt
+              </h2>
+              <p>
+                Jesteś gotów na cyfrową podróż? Skontaktuj się z nami!
+              </p>
+            </div>
+
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <a
+                  href="tel:+48123456789"
+                  class="contacts__link contacts__link--phone"
+                >
+                  +48 123 456 789
+                </a>
+              </li>
+
+              <li class="contacts__item">
+                <a
+                  href="mailto:kontakt@queststarpath.com" 
+                  class="contacts__link contacts__link--mail"
+                >
+                  kontakt@queststarpath.com
+                </a>
+              </li>
+
+              <li class="contacts__item">
+                <a
+                  href="https://maps.app.goo.gl/NwCxTtbBkkDb2gvs9"
+                  class="contacts__link contacts__link--location"
+                  target="_blank"
+                >
+                  Ul. Przykładowa 12, Warszawa, Polska
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <form class="contacts__form grid__item grid__item--onDesktop_6-12">
+            <input
+              type="text"
+              class="contacts__input"
+              placeholder="Imię"
+            >
+            <input
+              type="email"
+              class="contacts__input"
+              placeholder="E-mail"
+            >
+            <input
+              type="phone"
+              class="contacts__input"
+              placeholder="Telefon"
+            >
+
+            <textarea
+              class="contacts__text-area"
+              placeholder="Wiadomość"
+            ></textarea>
+
+            <button class="contacts__action-button action-button">
+              Potwierdź
+            </button>
+          </form>
         </div>
       </div>
     </section>
   </main>
+
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer__inner">
+        <ul class="footer__nav">
+          <li class="footer__nav-item">
+            <a href="cookies.html" class="footer__link">
+              Polityka plików cookies
+            </a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="warunki-korzystania.html" class="footer__link">
+              Warunki i zasady
+            </a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="polityka-prywatności.html" class="footer__link">
+              Polityka prywatności
+            </a>
+          </li>
+        </ul>
+
+        <p class="footer__copyright">
+          © 2024 joyadventurecool.com, Wszystkie prawa zastrzeżone.
+        </p>
+      </div>
+    </div>
+  </footer>
 
   <div class="menu-background"></div>
 

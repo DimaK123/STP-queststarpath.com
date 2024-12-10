@@ -1,0 +1,52 @@
+.faq {
+  @include sectionPaddingBlock;
+
+  &__section-title {
+    @include sectionTopTextMargin;
+
+    text-align: center;
+  }
+
+  &__questions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__question-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding-bottom: 30px;
+
+    position: relative;
+    
+    &:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      height: 1px;
+      background: linear-gradient(to right, rgba(7, 10, 17, 1), rgba(33, 212, 253, 1), rgba(7, 10, 17, 1));
+    }
+
+    @include onMobile {
+      gap: 24px ;
+    }
+  }
+
+  &__question {
+    max-width: 392px;
+
+    &--wide {
+      max-width: 500px;
+    }
+  }
+
+  &__answer {
+    max-width: 390px;
+  }
+}

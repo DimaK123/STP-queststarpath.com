@@ -1,0 +1,41 @@
+.reviews {
+  @include sectionPaddingBlock;
+
+  &__text {
+    @extend .projects__text;
+  }
+
+  &__section-title {
+    @extend .projects__section-title;
+  }
+
+  &__cards {
+    @extend .services__cards;
+
+    gap: 24px;
+  }
+
+  &__card {
+    @extend .services__card;
+    text-align: start;
+    padding: 16px;
+    border-radius: 12px;
+  }
+
+  &__user-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-bottom: 24px;
+  }
+
+  &__user-img {
+    @include figure(94px);
+    border-radius: 12px;
+  }
+
+  &__user-name {
+    margin-bottom: 8px;
+  }
+}
